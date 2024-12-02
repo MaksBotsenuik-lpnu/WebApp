@@ -1,0 +1,137 @@
+/* Стилі для накладки модального вікна */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Темніший напівпрозорий фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Стилі для вмісту модального вікна */
+.modal-content {
+    background-color: #fff;
+    padding: 20px; /* Зменшено для компактності */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%; /* Задати 100% ширини */
+    max-width: 600px; /* Максимальна ширина для кращої адаптивності */
+    position: relative; /* Для позиціювання хрестика */
+}
+
+/* Заголовок форми */
+.vacancy-form h2 {
+    text-align: center;
+    font-size: 28px; /* Збільшений шрифт заголовка */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Стилі для полів вводу */
+.vacancy-form label {
+    margin-bottom: 10px; /* Зменшено для компактності */
+    display: block;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Стилі для текстових полів */
+.vacancy-form input,
+.vacancy-form textarea {
+    width: 100%; /* Задано 100% ширини */
+    padding: 12px; /* Додано паддінг */
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Лише ці дві анімації */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для полів у фокусі */
+.vacancy-form input:focus,
+.vacancy-form textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Легкий ефект при фокусі */
+}
+
+/* Стилі для текстової області */
+.vacancy-form textarea {
+    resize: vertical; /* Можливість зміни розміру */
+    height: 120px; /* Задано висоту текстової області */
+}
+
+/* Стилі для кнопок */
+.vacancy-form button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px; /* Відстань між кнопками */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Стилі для кнопок при наведенні */
+.vacancy-form button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Легке підняття кнопки */
+}
+
+/* Стилі для кнопки скасування */
+.cancel-btn {
+    background-color: #f44336; /* Червоний колір */
+}
+
+/* Стилі для кнопки скасування при наведенні */
+.cancel-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Стилі для контейнера кнопок */
+.form-buttons {
+    display: flex;
+    justify-content: flex-end; /* Вирівнювання кнопок праворуч */
+    margin-top: 20px;
+}
+
+/* Стилі для кнопки додавання навички */
+.add-skill-btn {
+    margin-top: 10px;
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Стилі для кнопки додавання навички при наведенні */
+.add-skill-btn:hover {
+    background-color: #0097a7;
+}
+
+/* Стилі для кнопки закриття */
+.close-btn {
+    position: absolute;
+    top: 10px; /* Вирівнювання по верхньому краю */
+    right: 15px; /* Вирівнювання по правому краю */
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+}
+
+/* Стилі для кнопки закриття при наведенні */
+.close-btn:hover {
+    color: #f44336; /* Червоний колір при наведенні */
+}

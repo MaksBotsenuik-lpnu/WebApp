@@ -1,0 +1,33 @@
+.home {
+    display: flex;               /* Використовуємо флекс-контейнер для центровання */
+    flex-direction: column;      /* Вирівнюємо дочірні елементи вертикально */
+    justify-content: center;     /* Центруємо по вертикалі */
+    align-items: center;         /* Центруємо по горизонталі */
+    height: calc(100vh - 60px);  /* Висота на 100% від вікна з урахуванням висоти заголовка */
+    padding: 20px;
+    background-color: #f4f4f4;   /* Світло-сірий фон */
+}
+
+.title {
+    color: #333;                 /* Колір заголовка */
+}
+
+.description {
+    color: #555;                 /* Колір опису */
+}
+
+.logo {
+    max-width: 200px;            /* Максимальна ширина логотипу */
+    height: auto;                 /* Зберігаємо пропорції */
+    margin: 20px 0;              /* Відступи зверху та знизу */
+    animation: zoom 1.5s ease-in-out infinite; /* Додаємо анімацію */
+}
+
+@keyframes zoom {
+    0%, 100% {
+        transform: scale(1);      /* Початковий та кінцевий стан */
+    }
+    50% {
+        transform: scale(1.1);    /* Середній стан (масштабування) */
+    }
+}

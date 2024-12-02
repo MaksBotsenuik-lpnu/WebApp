@@ -1,0 +1,68 @@
+.recruiters-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.recruiters-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recruiter-item {
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between; /* Вирівнювання простору між полями */
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    align-items: center; /* Центрування елементів вертикально */
+}
+
+.recruiter-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recruiter-info {
+    font-size: 18px;
+    color: #34495e;
+    flex: 1; /* Займає більше простору */
+    text-align: left; /* Текст вирівняний по лівому краю */
+}
+
+.recruiter-contact {
+    font-size: 16px;
+    color: #7f8c8d;
+    text-align: right; /* Контактна інформація вирівняна праворуч */
+}
+
+.recruiter-specialization {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2980b9;
+    margin-left: 20px; /* Відступ для кращого відділення спеціалізації */
+    text-align: right; /* Спеціалізація вирівняна праворуч */
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}

@@ -1,0 +1,34 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.ide
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bin/
+obj/
+publish/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+
+# Rider
+.idea/
+*.sln.iml
+
+# Logs
+*.log
+
+# Visual Studio Code
+.vscode/
+
+# Secrets
+secrets.json

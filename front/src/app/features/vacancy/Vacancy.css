@@ -1,0 +1,152 @@
+.vacancies-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+li:hover {
+    background-color: #e9ecef;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+    flex: 1;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+button.edit-btn {
+    padding: 5px 10px;
+    background-color: #316ba1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.edit-btn:hover {
+    background-color: #194f82;
+    transform: scale(1.05);
+}
+
+button.edit-btn:active {
+    transform: scale(1);
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #316ba1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.pagination button:hover {
+    background-color: #194F82;
+}
+
+.pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    background-color: #88a4bd;
+}
+
+.add-vacancy-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.add-vacancy-btn:hover {
+    background-color: #45a049;
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #555;
+}
+
+.vacancy-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Зменшена максимальна ширина форми */
+    margin: 0 auto;
+}
+
+.vacancy-form label {
+    margin-bottom: 10px;
+}
+
+.vacancy-form input,
+.vacancy-form textarea {
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 100%; /* Поля тепер займають всю ширину контейнера */
+    box-sizing: border-box; /* Для уникнення проблем з відступами */
+}
+
+.vacancy-form textarea {
+    resize: vertical; /* Тільки вертикальне масштабування */
+}
+
+.vacancy-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.vacancy-form button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,51 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    max-width: 800px; /* Maximum width for the container */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    background-color: #f4f4f4; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    color: #194F82; /* Dark blue color */
+}
+
+.candidates-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.candidate-item {
+    padding: 10px; /* Padding for each list item */
+    border-bottom: 1px solid #ddd; /* Divider between items */
+    display: flex; /* Flex for better alignment */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center items vertically */
+}
+
+.candidate-item:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+.vacancies-link {
+    display: block; /* Make the link block level for easier clicking */
+    text-align: center; /* Center the link */
+    margin-top: 20px; /* Top margin for spacing */
+    color: #194F82; /* Link color */
+    text-decoration: underline; /* Underline for the link */
+}
+
+.loading {
+    text-align: center; /* Center loading message */
+    font-size: 18px; /* Slightly larger text */
+}
+
+.error {
+    color: red; /* Red color for errors */
+    text-align: center; /* Center the error message */
+    margin-top: 20px; /* Top margin for spacing */
+}
